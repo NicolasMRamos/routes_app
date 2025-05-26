@@ -1,0 +1,37 @@
+\doxysection{algorithms.\+h}
+\hypertarget{algorithms_8h_source}{}\label{algorithms_8h_source}\index{src/headers/algorithms.h@{src/headers/algorithms.h}}
+\mbox{\hyperlink{algorithms_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ALGORITHMS\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ALGORITHMS\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Graph_8h}{../data\_structures/Graph.h}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ Edge\ Relaxation\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00014\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{algorithms_8h_a4789dd8331ba4e7e57e5727d357e6188}{driving\_relax}}(\mbox{\hyperlink{classEdge}{Edge<int>}}\ *edge);}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00023\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{algorithms_8h_a32911babc2ffd564953a4bf7e07cce32}{walking\_relax}}(\mbox{\hyperlink{classEdge}{Edge<int>}}\ *edge);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{comment}{//\ Dijkstra\ for\ Driving\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00033\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{algorithms_8h_a2aa6139c6132fff9b04995d153d3608a}{driving\_dijkstra}}(\mbox{\hyperlink{classGraph}{Graph<int>}}\ *g,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&origin);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{comment}{//\ Dijkstra\ for\ Walking\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00043\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{algorithms_8h_a61c81ed490aae03ca2d4f1b77fdb4650}{walking\_dijkstra}}(\mbox{\hyperlink{classGraph}{Graph<int>}}\ *g,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&origin);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{comment}{//\ Auxiliary\ Function\ to\ set\ up\ for\ Dijkstra\ execution\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00052\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{algorithms_8h_a83a52aa14f77bac68ac580f25b0016be}{setup}}(\mbox{\hyperlink{classGraph}{Graph<int>}}\ *g);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{comment}{//\ Auxiliary\ function\ to\ get\ Shortest\ Path\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00064\ std::vector<Vertex<int>*>\ \mbox{\hyperlink{algorithms_8h_a60486d03c8a314edd9fdb6ae18d55efe}{getPathDrive}}(\mbox{\hyperlink{classGraph}{Graph<int>}}\ *g,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&origin,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&dest);}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00074\ std::vector<Vertex<int>*>\ \mbox{\hyperlink{algorithms_8h_aeb66f76c5fe655d0d3f524ada7b38802}{getPathWalk}}(\mbox{\hyperlink{classGraph}{Graph<int>}}\ *g,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&origin,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&dest);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//ALGORITHMS\_H}}
+
+\end{DoxyCode}

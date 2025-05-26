@@ -1,0 +1,45 @@
+# --- Build directories ---
+build/
+cmake-build-*/
+
+# --- CMake Files ---
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+build.ninja
+rules.ninja
+Testing/
+
+# --- Compiled Binaries & Object Files ---
+*.o
+*.obj
+*.so
+*.dll
+*.a
+*.lib
+*.exe
+*.out
+
+# --- IDE and Editor Files ---
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+*.swn
+
+# --- CLion/JetBrains Specific ---
+cmake-build-debug/
+cmake-build-release/
+clion-environment.txt
+clion-Debug-log.txt
+
+# --- Logs & Temp Files ---
+*.log
+*.tmp
+*.cache
+
+# --- Miscellaneous ---
+*.DS_Store  # macOS
+Thumbs.db   # Windows

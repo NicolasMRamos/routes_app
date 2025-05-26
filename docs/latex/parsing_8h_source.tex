@@ -1,0 +1,25 @@
+\doxysection{parsing.\+h}
+\hypertarget{parsing_8h_source}{}\label{parsing_8h_source}\index{src/headers/parsing.h@{src/headers/parsing.h}}
+\mbox{\hyperlink{parsing_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PARSING\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PARSING\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Graph_8h}{../data\_structures/Graph.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00019\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{parsing_8h_a2e0810c3f40827e832adda1048765911}{parseLocations}}\ (\mbox{\hyperlink{classGraph}{Graph<int>}}\ *g,\ \textcolor{keyword}{const}\ std::string\ \&file);}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00031\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{parsing_8h_a243b3a360c65efffc81ee1949ca238e8}{parseDistances}}\ (\mbox{\hyperlink{classGraph}{Graph<int>}}\ *g,\ \textcolor{keyword}{const}\ std::string\ \&file);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00043\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{parsing_8h_ab029fc43ed223088660a93c98d94fdca}{parseAvoidNodes}}(\textcolor{keyword}{const}\ std::string\ \&line,\ std::vector<int>\ \&avoid\_n);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00055\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{parsing_8h_a5bfcbbd2d04895e906792ae398662f86}{parseAvoidSegments}}(\textcolor{keyword}{const}\ std::string\ \&line,\ std::vector<std::pair<int,\ int>>\ \&avoid\_seg);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00074\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{parsing_8h_af7bcd67e469305f4faf0b5e3f39291dc}{parseInput}}(std::ifstream\ \&f,\ \textcolor{keywordtype}{bool}\ \&driving,\ \textcolor{keywordtype}{int}\ \&src,\ \textcolor{keywordtype}{int}\ \&dest,\ \textcolor{keywordtype}{int}\ \&maxWalkTime,\ std::vector<int>\ \&avoid\_n,\ std::vector<std::pair<int,int>>\ \&avoid\_seg,\ \textcolor{keywordtype}{int}\ \&inc\_n,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ numVert);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//PARSING\_H}}
+
+\end{DoxyCode}

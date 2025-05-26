@@ -1,0 +1,48 @@
+\doxysection{src/headers/driving\+\_\+walking.h File Reference}
+\hypertarget{driving__walking_8h}{}\label{driving__walking_8h}\index{src/headers/driving\_walking.h@{src/headers/driving\_walking.h}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include "{}../data\+\_\+structures/\+Graph.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{driving__walking_8h_a6989c1277227564cec3bc84bae944dd7}{eco\+\_\+mode}} (\mbox{\hyperlink{classGraph}{Graph}}$<$ int $>$ \texorpdfstring{$\ast$}{*}g, const int \&origin, const int \&dest, const double \&max\+\_\+walk\+\_\+time, const std\+::vector$<$ int $>$ \&avoid\+\_\+nodes, const std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \&avoid\+\_\+edges, bool batch=false)
+\begin{DoxyCompactList}\small\item\em Computes the most eco-\/friendly route from an origin to a destination, combining driving and walking. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{driving__walking_8h_afb7b236ac5f94f24d9d0515d880221b0}{eco\+\_\+mode\+\_\+approximate}} (\mbox{\hyperlink{classGraph}{Graph}}$<$ int $>$ \texorpdfstring{$\ast$}{*}g, const int \&origin, const int \&dest, const double \&max\+\_\+walk\+\_\+time, const std\+::vector$<$ int $>$ \&avoid\+\_\+nodes, const std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \&avoid\+\_\+edges, bool batch=false)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{driving__walking_8h_a6989c1277227564cec3bc84bae944dd7}\index{driving\_walking.h@{driving\_walking.h}!eco\_mode@{eco\_mode}}
+\index{eco\_mode@{eco\_mode}!driving\_walking.h@{driving\_walking.h}}
+\doxysubsubsection{\texorpdfstring{eco\_mode()}{eco\_mode()}}
+{\footnotesize\ttfamily \label{driving__walking_8h_a6989c1277227564cec3bc84bae944dd7} 
+void eco\+\_\+mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGraph}{Graph}}$<$ int $>$ \texorpdfstring{$\ast$}{*}}]{g}{, }\item[{const int \&}]{origin}{, }\item[{const int \&}]{dest}{, }\item[{const double \&}]{max\+\_\+walk\+\_\+time}{, }\item[{const std\+::vector$<$ int $>$ \&}]{avoid\+\_\+nodes}{, }\item[{const std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \&}]{avoid\+\_\+edges}{, }\item[{bool}]{batch}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+
+
+Computes the most eco-\/friendly route from an origin to a destination, combining driving and walking. 
+
+This function calculates the optimal route by driving to a parking node and then walking to the destination, while respecting constraints such as maximum walking time and avoiding specific nodes and edges.
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & The graph containing the vertices and edges. \\
+\hline
+{\em origin} & The ID of the origin vertex. \\
+\hline
+{\em dest} & The ID of the destination vertex. \\
+\hline
+{\em max\+\_\+walk\+\_\+time} & The maximum allowed walking time in minutes. \\
+\hline
+{\em avoid\+\_\+nodes} & A vector of node IDs to avoid in the route. \\
+\hline
+{\em avoid\+\_\+edges} & A vector of pairs representing edges to avoid in the route. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{driving__walking_8h_afb7b236ac5f94f24d9d0515d880221b0}\index{driving\_walking.h@{driving\_walking.h}!eco\_mode\_approximate@{eco\_mode\_approximate}}
+\index{eco\_mode\_approximate@{eco\_mode\_approximate}!driving\_walking.h@{driving\_walking.h}}
+\doxysubsubsection{\texorpdfstring{eco\_mode\_approximate()}{eco\_mode\_approximate()}}
+{\footnotesize\ttfamily \label{driving__walking_8h_afb7b236ac5f94f24d9d0515d880221b0} 
+void eco\+\_\+mode\+\_\+approximate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGraph}{Graph}}$<$ int $>$ \texorpdfstring{$\ast$}{*}}]{g}{, }\item[{const int \&}]{origin}{, }\item[{const int \&}]{dest}{, }\item[{const double \&}]{max\+\_\+walk\+\_\+time}{, }\item[{const std\+::vector$<$ int $>$ \&}]{avoid\+\_\+nodes}{, }\item[{const std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \&}]{avoid\+\_\+edges}{, }\item[{bool}]{batch}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+

@@ -1,0 +1,66 @@
+\doxysection{src/main\+\_\+files/driving.cpp File Reference}
+\hypertarget{driving_8cpp}{}\label{driving_8cpp}\index{src/main\_files/driving.cpp@{src/main\_files/driving.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include "{}../data\+\_\+structures/\+Graph.\+h"{}}\newline
+{\ttfamily \#include "{}../headers/algorithms.\+h"{}}\newline
+{\ttfamily \#include "{}../headers/driving.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{driving_8cpp_a4bbc95e30317e0155d4ada87a8e578ec}{driving\+\_\+mode}} (\mbox{\hyperlink{classGraph}{Graph}}$<$ int $>$ \texorpdfstring{$\ast$}{*}g, const int \&origin, const int \&dest, const bool batch)
+\begin{DoxyCompactList}\small\item\em Computes the best and alternative driving routes from an origin to a destination without any restrictions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{driving_8cpp_a44ee2c0d11a74b58ff62d804fc135208}{driving\+\_\+mode}} (\mbox{\hyperlink{classGraph}{Graph}}$<$ int $>$ \texorpdfstring{$\ast$}{*}g, const int \&origin, const int \&dest, const vector$<$ int $>$ \&avoid\+\_\+nodes, const vector$<$ pair$<$ int, int $>$ $>$ \&avoid\+\_\+edges, const int \&include\+\_\+node, const bool batch)
+\begin{DoxyCompactList}\small\item\em Computes the best driving route from an origin to a destination while avoiding specific nodes and edges, and optionally including a specific node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{driving_8cpp_a4bbc95e30317e0155d4ada87a8e578ec}\index{driving.cpp@{driving.cpp}!driving\_mode@{driving\_mode}}
+\index{driving\_mode@{driving\_mode}!driving.cpp@{driving.cpp}}
+\doxysubsubsection{\texorpdfstring{driving\_mode()}{driving\_mode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{driving_8cpp_a4bbc95e30317e0155d4ada87a8e578ec} 
+void driving\+\_\+mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGraph}{Graph}}$<$ int $>$ \texorpdfstring{$\ast$}{*}}]{g}{, }\item[{const int \&}]{origin}{, }\item[{const int \&}]{dest}{, }\item[{const bool}]{batch}{}\end{DoxyParamCaption})}
+
+
+
+Computes the best and alternative driving routes from an origin to a destination without any restrictions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & The graph containing the vertices and edges. \\
+\hline
+{\em origin} & The ID of the origin vertex. \\
+\hline
+{\em dest} & The ID of the destination vertex. \\
+\hline
+{\em batch} & If true, outputs the results to a file; otherwise, outputs to the console. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{driving_8cpp_a44ee2c0d11a74b58ff62d804fc135208}\index{driving.cpp@{driving.cpp}!driving\_mode@{driving\_mode}}
+\index{driving\_mode@{driving\_mode}!driving.cpp@{driving.cpp}}
+\doxysubsubsection{\texorpdfstring{driving\_mode()}{driving\_mode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{driving_8cpp_a44ee2c0d11a74b58ff62d804fc135208} 
+void driving\+\_\+mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGraph}{Graph}}$<$ int $>$ \texorpdfstring{$\ast$}{*}}]{g}{, }\item[{const int \&}]{origin}{, }\item[{const int \&}]{dest}{, }\item[{const vector$<$ int $>$ \&}]{avoid\+\_\+nodes}{, }\item[{const vector$<$ pair$<$ int, int $>$ $>$ \&}]{avoid\+\_\+edges}{, }\item[{const int \&}]{include\+\_\+node}{, }\item[{const bool}]{batch}{}\end{DoxyParamCaption})}
+
+
+
+Computes the best driving route from an origin to a destination while avoiding specific nodes and edges, and optionally including a specific node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & The graph containing the vertices and edges. \\
+\hline
+{\em origin} & The ID of the origin vertex. \\
+\hline
+{\em dest} & The ID of the destination vertex. \\
+\hline
+{\em avoid\+\_\+nodes} & A vector of node IDs to avoid in the route. \\
+\hline
+{\em avoid\+\_\+edges} & A vector of pairs representing edges to avoid in the route. \\
+\hline
+{\em include\+\_\+node} & The ID of a node that must be included in the route, or -\/1 if no such node is required. \\
+\hline
+{\em batch} & If true, outputs the results to a file; otherwise, outputs to the console. \\
+\hline
+\end{DoxyParams}

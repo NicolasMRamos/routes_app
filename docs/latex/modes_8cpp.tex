@@ -1,0 +1,48 @@
+\doxysection{src/main\+\_\+files/modes.cpp File Reference}
+\hypertarget{modes_8cpp}{}\label{modes_8cpp}\index{src/main\_files/modes.cpp@{src/main\_files/modes.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include "{}../data\+\_\+structures/\+Graph.\+h"{}}\newline
+{\ttfamily \#include "{}../headers/parsing.\+h"{}}\newline
+{\ttfamily \#include "{}../headers/driving.\+h"{}}\newline
+{\ttfamily \#include "{}../headers/driving\+\_\+walking.\+h"{}}\newline
+{\ttfamily \#include "{}../headers/modes.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{modes_8cpp_a6631bbe52f4061c1b360da7e0b8b0a85}{batch\+Mode}} (char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Executes the program in batch mode, reading input from files and computing the optimal route. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{modes_8cpp_a5452242a13043c5415efbbca818fa1b5}{manual\+Mode}} ()
+\begin{DoxyCompactList}\small\item\em Executes the program in manual mode, allowing the user to input data interactively. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{modes_8cpp_a6631bbe52f4061c1b360da7e0b8b0a85}\index{modes.cpp@{modes.cpp}!batchMode@{batchMode}}
+\index{batchMode@{batchMode}!modes.cpp@{modes.cpp}}
+\doxysubsubsection{\texorpdfstring{batchMode()}{batchMode()}}
+{\footnotesize\ttfamily \label{modes_8cpp_a6631bbe52f4061c1b360da7e0b8b0a85} 
+void batch\+Mode (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{argv}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Executes the program in batch mode, reading input from files and computing the optimal route. 
+
+This function reads the graph data from location and distance files, processes the input file to determine the source, destination, and constraints, and then computes the optimal route based on the specified mode (driving or eco mode).
+
+Input format\+: ./\+DA\+\_\+\+PROJ1 $<$locations file$>$ $<$distances file$>$ $<$input file$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em argv} & Command-\/line arguments containing the paths to the locations file, distances file, and input file. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{modes_8cpp_a5452242a13043c5415efbbca818fa1b5}\index{modes.cpp@{modes.cpp}!manualMode@{manualMode}}
+\index{manualMode@{manualMode}!modes.cpp@{modes.cpp}}
+\doxysubsubsection{\texorpdfstring{manualMode()}{manualMode()}}
+{\footnotesize\ttfamily \label{modes_8cpp_a5452242a13043c5415efbbca818fa1b5} 
+void manual\+Mode (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Executes the program in manual mode, allowing the user to input data interactively. 
+
+This function prompts the user to provide the locations and distances files, then allows them to choose between driving mode and eco mode. Based on the user\textquotesingle{}s inputs, it computes and displays the optimal route. 

@@ -1,0 +1,40 @@
+\doxysection{src/data\+\_\+structures/\+Mutable\+Priority\+Queue.h File Reference}
+\hypertarget{MutablePriorityQueue_8h}{}\label{MutablePriorityQueue_8h}\index{src/data\_structures/MutablePriorityQueue.h@{src/data\_structures/MutablePriorityQueue.h}}
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classMutablePriorityQueue}{Mutable\+Priority\+Queue$<$ T $>$}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{MutablePriorityQueue_8h_a915a9564b15f2c25e828da2e9a05769c}{parent}}(i)
+\item 
+\#define \mbox{\hyperlink{MutablePriorityQueue_8h_ac84ef3998ba958fd8abf03d08cc5ffcb}{left\+Child}}(i)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{MutablePriorityQueue_8h_ac84ef3998ba958fd8abf03d08cc5ffcb}\index{MutablePriorityQueue.h@{MutablePriorityQueue.h}!leftChild@{leftChild}}
+\index{leftChild@{leftChild}!MutablePriorityQueue.h@{MutablePriorityQueue.h}}
+\doxysubsubsection{\texorpdfstring{leftChild}{leftChild}}
+{\footnotesize\ttfamily \label{MutablePriorityQueue_8h_ac84ef3998ba958fd8abf03d08cc5ffcb} 
+\#define left\+Child(\begin{DoxyParamCaption}\item[{}]{i}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((i)\ *\ 2)}
+
+\end{DoxyCode}
+\Hypertarget{MutablePriorityQueue_8h_a915a9564b15f2c25e828da2e9a05769c}\index{MutablePriorityQueue.h@{MutablePriorityQueue.h}!parent@{parent}}
+\index{parent@{parent}!MutablePriorityQueue.h@{MutablePriorityQueue.h}}
+\doxysubsubsection{\texorpdfstring{parent}{parent}}
+{\footnotesize\ttfamily \label{MutablePriorityQueue_8h_a915a9564b15f2c25e828da2e9a05769c} 
+\#define parent(\begin{DoxyParamCaption}\item[{}]{i}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((i)\ /\ 2)}
+
+\end{DoxyCode}

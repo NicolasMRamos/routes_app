@@ -1,0 +1,188 @@
+\doxysection{Edge\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classEdge}{}\label{classEdge}\index{Edge$<$ T $>$@{Edge$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Graph.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEdge_a50c3dad5cb5aa5c7ed5654a196242324}{Edge}} (\mbox{\hyperlink{classVertex}{Vertex}}$<$ T $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classEdge_a4510c31e0479f9d25f6e35d086887192}{orig}}, \mbox{\hyperlink{classVertex}{Vertex}}$<$ T $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classEdge_ae4d65678b91bd9d814af4720ad87cd0c}{dest}}, double wd, double ww)
+\item 
+\mbox{\hyperlink{classVertex}{Vertex}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEdge_a9a2de066dff8513dd788d553fc1d0c81}{get\+Dest}} () const
+\item 
+double \mbox{\hyperlink{classEdge_a5f4d02ba4bb71254e534f2151c16a7be}{get\+Weight\+Drive}} () const
+\item 
+double \mbox{\hyperlink{classEdge_a114625fe588d747b287a27c38aaeb852}{get\+Weight\+Walk}} () const
+\item 
+bool \mbox{\hyperlink{classEdge_a2d36af60fa3dea16824bec12e5f68c58}{is\+Selected}} () const
+\item 
+bool \mbox{\hyperlink{classEdge_a901b97f8eda38e4ac957d2b0d49a68fd}{is\+Restricted}} () const
+\item 
+\mbox{\hyperlink{classVertex}{Vertex}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEdge_a40fc1470c5339203defca19b67c2535b}{get\+Orig}} () const
+\item 
+\mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEdge_af0a900f3006e47b9f363df7429298eeb}{get\+Reverse}} () const
+\item 
+void \mbox{\hyperlink{classEdge_acf7d7d5c570f6e2bb5bb5b514d2ae498}{set\+Restricted}} (bool \mbox{\hyperlink{classEdge_a04b24a6b432a91f8cec8798517cbfb99}{restricted}})
+\item 
+void \mbox{\hyperlink{classEdge_a87c8402c5edd6729a2c934e2a0cce6fe}{set\+Selected}} (bool \mbox{\hyperlink{classEdge_a5242549271b59544ad1189fb532b5bbe}{selected}})
+\item 
+void \mbox{\hyperlink{classEdge_afe8f8429025756c63f38e8c6fde7382c}{set\+Reverse}} (\mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classEdge_a6c1e5191f85afbd20cf6198815c9b079}{reverse}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classVertex}{Vertex}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEdge_ae4d65678b91bd9d814af4720ad87cd0c}{dest}}
+\item 
+double \mbox{\hyperlink{classEdge_ad3bc22fe0d14c89584ecf800fe30cc24}{weight\+\_\+drive}}
+\item 
+double \mbox{\hyperlink{classEdge_a399289e9a559ecf1da5b9dd29ff964f8}{weight\+\_\+walk}}
+\item 
+bool \mbox{\hyperlink{classEdge_a04b24a6b432a91f8cec8798517cbfb99}{restricted}} = false
+\item 
+bool \mbox{\hyperlink{classEdge_a5242549271b59544ad1189fb532b5bbe}{selected}} = false
+\item 
+\mbox{\hyperlink{classVertex}{Vertex}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEdge_a4510c31e0479f9d25f6e35d086887192}{orig}}
+\item 
+\mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEdge_a6c1e5191f85afbd20cf6198815c9b079}{reverse}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classEdge_a50c3dad5cb5aa5c7ed5654a196242324}\index{Edge$<$ T $>$@{Edge$<$ T $>$}!Edge@{Edge}}
+\index{Edge@{Edge}!Edge$<$ T $>$@{Edge$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Edge()}{Edge()}}
+{\footnotesize\ttfamily \label{classEdge_a50c3dad5cb5aa5c7ed5654a196242324} 
+template$<$class T$>$ \\
+\mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$\mbox{\hyperlink{classEdge}{\+::\+Edge}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVertex}{Vertex}}$<$ T $>$ \texorpdfstring{$\ast$}{*}}]{orig}{, }\item[{\mbox{\hyperlink{classVertex}{Vertex}}$<$ T $>$ \texorpdfstring{$\ast$}{*}}]{dest}{, }\item[{double}]{wd}{, }\item[{double}]{ww}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEdge_a9a2de066dff8513dd788d553fc1d0c81}\index{Edge$<$ T $>$@{Edge$<$ T $>$}!getDest@{getDest}}
+\index{getDest@{getDest}!Edge$<$ T $>$@{Edge$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getDest()}{getDest()}}
+{\footnotesize\ttfamily \label{classEdge_a9a2de066dff8513dd788d553fc1d0c81} 
+template$<$class T$>$ \\
+\mbox{\hyperlink{classVertex}{Vertex}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$\+::get\+Dest (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{classEdge_a40fc1470c5339203defca19b67c2535b}\index{Edge$<$ T $>$@{Edge$<$ T $>$}!getOrig@{getOrig}}
+\index{getOrig@{getOrig}!Edge$<$ T $>$@{Edge$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getOrig()}{getOrig()}}
+{\footnotesize\ttfamily \label{classEdge_a40fc1470c5339203defca19b67c2535b} 
+template$<$class T$>$ \\
+\mbox{\hyperlink{classVertex}{Vertex}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$\+::get\+Orig (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{classEdge_af0a900f3006e47b9f363df7429298eeb}\index{Edge$<$ T $>$@{Edge$<$ T $>$}!getReverse@{getReverse}}
+\index{getReverse@{getReverse}!Edge$<$ T $>$@{Edge$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getReverse()}{getReverse()}}
+{\footnotesize\ttfamily \label{classEdge_af0a900f3006e47b9f363df7429298eeb} 
+template$<$class T$>$ \\
+\mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$\+::get\+Reverse (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{classEdge_a5f4d02ba4bb71254e534f2151c16a7be}\index{Edge$<$ T $>$@{Edge$<$ T $>$}!getWeightDrive@{getWeightDrive}}
+\index{getWeightDrive@{getWeightDrive}!Edge$<$ T $>$@{Edge$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getWeightDrive()}{getWeightDrive()}}
+{\footnotesize\ttfamily \label{classEdge_a5f4d02ba4bb71254e534f2151c16a7be} 
+template$<$class T$>$ \\
+double \mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$\+::get\+Weight\+Drive (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{classEdge_a114625fe588d747b287a27c38aaeb852}\index{Edge$<$ T $>$@{Edge$<$ T $>$}!getWeightWalk@{getWeightWalk}}
+\index{getWeightWalk@{getWeightWalk}!Edge$<$ T $>$@{Edge$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getWeightWalk()}{getWeightWalk()}}
+{\footnotesize\ttfamily \label{classEdge_a114625fe588d747b287a27c38aaeb852} 
+template$<$class T$>$ \\
+double \mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$\+::get\+Weight\+Walk (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{classEdge_a901b97f8eda38e4ac957d2b0d49a68fd}\index{Edge$<$ T $>$@{Edge$<$ T $>$}!isRestricted@{isRestricted}}
+\index{isRestricted@{isRestricted}!Edge$<$ T $>$@{Edge$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{isRestricted()}{isRestricted()}}
+{\footnotesize\ttfamily \label{classEdge_a901b97f8eda38e4ac957d2b0d49a68fd} 
+template$<$class T$>$ \\
+bool \mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$\+::is\+Restricted (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{classEdge_a2d36af60fa3dea16824bec12e5f68c58}\index{Edge$<$ T $>$@{Edge$<$ T $>$}!isSelected@{isSelected}}
+\index{isSelected@{isSelected}!Edge$<$ T $>$@{Edge$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{isSelected()}{isSelected()}}
+{\footnotesize\ttfamily \label{classEdge_a2d36af60fa3dea16824bec12e5f68c58} 
+template$<$class T$>$ \\
+bool \mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$\+::is\+Selected (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{classEdge_acf7d7d5c570f6e2bb5bb5b514d2ae498}\index{Edge$<$ T $>$@{Edge$<$ T $>$}!setRestricted@{setRestricted}}
+\index{setRestricted@{setRestricted}!Edge$<$ T $>$@{Edge$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setRestricted()}{setRestricted()}}
+{\footnotesize\ttfamily \label{classEdge_acf7d7d5c570f6e2bb5bb5b514d2ae498} 
+template$<$class T$>$ \\
+void \mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$\+::set\+Restricted (\begin{DoxyParamCaption}\item[{bool}]{restricted}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classEdge_afe8f8429025756c63f38e8c6fde7382c}\index{Edge$<$ T $>$@{Edge$<$ T $>$}!setReverse@{setReverse}}
+\index{setReverse@{setReverse}!Edge$<$ T $>$@{Edge$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setReverse()}{setReverse()}}
+{\footnotesize\ttfamily \label{classEdge_afe8f8429025756c63f38e8c6fde7382c} 
+template$<$class T$>$ \\
+void \mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$\+::set\+Reverse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$ \texorpdfstring{$\ast$}{*}}]{reverse}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classEdge_a87c8402c5edd6729a2c934e2a0cce6fe}\index{Edge$<$ T $>$@{Edge$<$ T $>$}!setSelected@{setSelected}}
+\index{setSelected@{setSelected}!Edge$<$ T $>$@{Edge$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setSelected()}{setSelected()}}
+{\footnotesize\ttfamily \label{classEdge_a87c8402c5edd6729a2c934e2a0cce6fe} 
+template$<$class T$>$ \\
+void \mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$\+::set\+Selected (\begin{DoxyParamCaption}\item[{bool}]{selected}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classEdge_ae4d65678b91bd9d814af4720ad87cd0c}\index{Edge$<$ T $>$@{Edge$<$ T $>$}!dest@{dest}}
+\index{dest@{dest}!Edge$<$ T $>$@{Edge$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{dest}{dest}}
+{\footnotesize\ttfamily \label{classEdge_ae4d65678b91bd9d814af4720ad87cd0c} 
+template$<$class T$>$ \\
+\mbox{\hyperlink{classVertex}{Vertex}}$<$T$>$\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$\+::dest\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classEdge_a4510c31e0479f9d25f6e35d086887192}\index{Edge$<$ T $>$@{Edge$<$ T $>$}!orig@{orig}}
+\index{orig@{orig}!Edge$<$ T $>$@{Edge$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{orig}{orig}}
+{\footnotesize\ttfamily \label{classEdge_a4510c31e0479f9d25f6e35d086887192} 
+template$<$class T$>$ \\
+\mbox{\hyperlink{classVertex}{Vertex}}$<$T$>$\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$\+::orig\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classEdge_a04b24a6b432a91f8cec8798517cbfb99}\index{Edge$<$ T $>$@{Edge$<$ T $>$}!restricted@{restricted}}
+\index{restricted@{restricted}!Edge$<$ T $>$@{Edge$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{restricted}{restricted}}
+{\footnotesize\ttfamily \label{classEdge_a04b24a6b432a91f8cec8798517cbfb99} 
+template$<$class T$>$ \\
+bool \mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$\+::restricted = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classEdge_a6c1e5191f85afbd20cf6198815c9b079}\index{Edge$<$ T $>$@{Edge$<$ T $>$}!reverse@{reverse}}
+\index{reverse@{reverse}!Edge$<$ T $>$@{Edge$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{reverse}{reverse}}
+{\footnotesize\ttfamily \label{classEdge_a6c1e5191f85afbd20cf6198815c9b079} 
+template$<$class T$>$ \\
+\mbox{\hyperlink{classEdge}{Edge}}$<$T$>$\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$\+::reverse = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classEdge_a5242549271b59544ad1189fb532b5bbe}\index{Edge$<$ T $>$@{Edge$<$ T $>$}!selected@{selected}}
+\index{selected@{selected}!Edge$<$ T $>$@{Edge$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{selected}{selected}}
+{\footnotesize\ttfamily \label{classEdge_a5242549271b59544ad1189fb532b5bbe} 
+template$<$class T$>$ \\
+bool \mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$\+::selected = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classEdge_ad3bc22fe0d14c89584ecf800fe30cc24}\index{Edge$<$ T $>$@{Edge$<$ T $>$}!weight\_drive@{weight\_drive}}
+\index{weight\_drive@{weight\_drive}!Edge$<$ T $>$@{Edge$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{weight\_drive}{weight\_drive}}
+{\footnotesize\ttfamily \label{classEdge_ad3bc22fe0d14c89584ecf800fe30cc24} 
+template$<$class T$>$ \\
+double \mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$\+::weight\+\_\+drive\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classEdge_a399289e9a559ecf1da5b9dd29ff964f8}\index{Edge$<$ T $>$@{Edge$<$ T $>$}!weight\_walk@{weight\_walk}}
+\index{weight\_walk@{weight\_walk}!Edge$<$ T $>$@{Edge$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{weight\_walk}{weight\_walk}}
+{\footnotesize\ttfamily \label{classEdge_a399289e9a559ecf1da5b9dd29ff964f8} 
+template$<$class T$>$ \\
+double \mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$\+::weight\+\_\+walk\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/data\+\_\+structures/\mbox{\hyperlink{Graph_8h}{Graph.\+h}}\end{DoxyCompactItemize}

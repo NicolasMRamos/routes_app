@@ -1,0 +1,23 @@
+\doxysection{driving.\+h}
+\hypertarget{driving_8h_source}{}\label{driving_8h_source}\index{src/headers/driving.h@{src/headers/driving.h}}
+\mbox{\hyperlink{driving_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DRIVING\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DRIVING\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <utility>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Graph_8h}{../data\_structures/Graph.h}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{comment}{//\ Driving\ Computation:\ no\ restrictions\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00019\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{driving_8h_ab3b4f4f13d9afed07619754d4711b1d9}{driving\_mode}}(\mbox{\hyperlink{classGraph}{Graph<int>}}\ *g,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&origin,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&dest,\ \textcolor{keywordtype}{bool}\ batch\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{comment}{//\ Driving\ Computation:\ with\ restrictions\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00034\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{driving_8h_ab3b4f4f13d9afed07619754d4711b1d9}{driving\_mode}}(\mbox{\hyperlink{classGraph}{Graph<int>}}\ *g,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&origin,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&dest,\ \textcolor{keyword}{const}\ std::vector<int>\ \&avoid\_nodes,\ \textcolor{keyword}{const}\ std::vector<std::pair<int,int>>\ \&avoid\_edges,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&include\_node\ =\ -\/1,\ \textcolor{keywordtype}{bool}\ batch\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//DRIVING\_H}}
+
+\end{DoxyCode}

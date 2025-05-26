@@ -1,0 +1,19 @@
+# Normalize text files (convert CRLF to LF in the repo)
+* text=auto
+
+# Explicitly set line endings for common file types
+*.cpp  text eol=lf
+*.hpp  text eol=lf
+*.h    text eol=lf
+*.sh   text eol=lf
+*.md   text eol=lf
+*.csv  text eol=lf
+
+# Keep binary files unchanged
+*.png  binary
+*.jpg  binary
+*.gif  binary
+*.pdf  binary
+*.zip  binary
+*.exe  binary
+*.so   binary

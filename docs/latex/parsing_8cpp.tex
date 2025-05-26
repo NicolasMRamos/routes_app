@@ -1,0 +1,145 @@
+\doxysection{src/main\+\_\+files/parsing.cpp File Reference}
+\hypertarget{parsing_8cpp}{}\label{parsing_8cpp}\index{src/main\_files/parsing.cpp@{src/main\_files/parsing.cpp}}
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include "{}../headers/parsing.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{parsing_8cpp_a7a6e73c79a858629c9540cc9cc46d991}{parse\+Locations}} (\mbox{\hyperlink{classGraph}{Graph}}$<$ int $>$ \texorpdfstring{$\ast$}{*}g, const string \&file)
+\begin{DoxyCompactList}\small\item\em Parses the locations file to build the graph. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{parsing_8cpp_ace65447fc6209080b31a4b65762a95a2}{parse\+Distances}} (\mbox{\hyperlink{classGraph}{Graph}}$<$ int $>$ \texorpdfstring{$\ast$}{*}g, const string \&file)
+\begin{DoxyCompactList}\small\item\em Parses the distances file to add edges to the graph. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{parsing_8cpp_a617cd2de5c7447b7325d61f05d698568}{parse\+Avoid\+Nodes}} (const string \&line, vector$<$ int $>$ \&avoid\+\_\+n)
+\begin{DoxyCompactList}\small\item\em Parses a line of text to extract nodes to avoid. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{parsing_8cpp_a8993dacf436c02d937dba093dadf8fd1}{parse\+Avoid\+Segments}} (const string \&line, vector$<$ pair$<$ int, int $>$ $>$ \&avoid\+\_\+seg)
+\begin{DoxyCompactList}\small\item\em Parses a line of text to extract segments to avoid. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{parsing_8cpp_ac396f706f4ff2e4291eeef7c52d26f05}{parse\+Input}} (ifstream \&f, bool \&driving, int \&src, int \&dest, int \&max\+Walk\+Time, vector$<$ int $>$ \&avoid\+\_\+n, vector$<$ pair$<$ int, int $>$ $>$ \&avoid\+\_\+seg, int \&inc\+\_\+n, const int num\+Vert)
+\begin{DoxyCompactList}\small\item\em Parses the input file to extract route computation parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{parsing_8cpp_a617cd2de5c7447b7325d61f05d698568}\index{parsing.cpp@{parsing.cpp}!parseAvoidNodes@{parseAvoidNodes}}
+\index{parseAvoidNodes@{parseAvoidNodes}!parsing.cpp@{parsing.cpp}}
+\doxysubsubsection{\texorpdfstring{parseAvoidNodes()}{parseAvoidNodes()}}
+{\footnotesize\ttfamily \label{parsing_8cpp_a617cd2de5c7447b7325d61f05d698568} 
+bool parse\+Avoid\+Nodes (\begin{DoxyParamCaption}\item[{const string \&}]{line}{, }\item[{vector$<$ int $>$ \&}]{avoid\+\_\+n}{}\end{DoxyParamCaption})}
+
+
+
+Parses a line of text to extract nodes to avoid. 
+
+This function processes a string containing a list of node IDs separated by commas and adds them to the {\ttfamily avoid\+\_\+n} vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & The input string containing the nodes to avoid. \\
+\hline
+{\em avoid\+\_\+n} & The vector to store the node IDs. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the parsing was successful, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{parsing_8cpp_a8993dacf436c02d937dba093dadf8fd1}\index{parsing.cpp@{parsing.cpp}!parseAvoidSegments@{parseAvoidSegments}}
+\index{parseAvoidSegments@{parseAvoidSegments}!parsing.cpp@{parsing.cpp}}
+\doxysubsubsection{\texorpdfstring{parseAvoidSegments()}{parseAvoidSegments()}}
+{\footnotesize\ttfamily \label{parsing_8cpp_a8993dacf436c02d937dba093dadf8fd1} 
+bool parse\+Avoid\+Segments (\begin{DoxyParamCaption}\item[{const string \&}]{line}{, }\item[{vector$<$ pair$<$ int, int $>$ $>$ \&}]{avoid\+\_\+seg}{}\end{DoxyParamCaption})}
+
+
+
+Parses a line of text to extract segments to avoid. 
+
+This function processes a string containing pairs of node IDs representing segments to avoid and adds them to the {\ttfamily avoid\+\_\+seg} vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & The input string containing the segments to avoid. \\
+\hline
+{\em avoid\+\_\+seg} & The vector to store the segment pairs. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the parsing was successful, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{parsing_8cpp_ace65447fc6209080b31a4b65762a95a2}\index{parsing.cpp@{parsing.cpp}!parseDistances@{parseDistances}}
+\index{parseDistances@{parseDistances}!parsing.cpp@{parsing.cpp}}
+\doxysubsubsection{\texorpdfstring{parseDistances()}{parseDistances()}}
+{\footnotesize\ttfamily \label{parsing_8cpp_ace65447fc6209080b31a4b65762a95a2} 
+bool parse\+Distances (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGraph}{Graph}}$<$ int $>$ \texorpdfstring{$\ast$}{*}}]{g}{, }\item[{const string \&}]{file}{}\end{DoxyParamCaption})}
+
+
+
+Parses the distances file to add edges to the graph. 
+
+This function reads a CSV file containing distance data (location pairs, driving time, and walking time) and adds bidirectional edges to the graph.
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & The graph to which edges will be added. \\
+\hline
+{\em file} & The path to the distances file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the file was successfully parsed, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{parsing_8cpp_ac396f706f4ff2e4291eeef7c52d26f05}\index{parsing.cpp@{parsing.cpp}!parseInput@{parseInput}}
+\index{parseInput@{parseInput}!parsing.cpp@{parsing.cpp}}
+\doxysubsubsection{\texorpdfstring{parseInput()}{parseInput()}}
+{\footnotesize\ttfamily \label{parsing_8cpp_ac396f706f4ff2e4291eeef7c52d26f05} 
+bool parse\+Input (\begin{DoxyParamCaption}\item[{ifstream \&}]{f}{, }\item[{bool \&}]{driving}{, }\item[{int \&}]{src}{, }\item[{int \&}]{dest}{, }\item[{int \&}]{max\+Walk\+Time}{, }\item[{vector$<$ int $>$ \&}]{avoid\+\_\+n}{, }\item[{vector$<$ pair$<$ int, int $>$ $>$ \&}]{avoid\+\_\+seg}{, }\item[{int \&}]{inc\+\_\+n}{, }\item[{const int}]{num\+Vert}{}\end{DoxyParamCaption})}
+
+
+
+Parses the input file to extract route computation parameters. 
+
+This function reads an input file containing mode, source, destination, constraints, and other parameters, and stores them in the provided variables.
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & The input file stream. \\
+\hline
+{\em driving} & A boolean indicating whether the mode is driving (true) or eco (false). \\
+\hline
+{\em src} & The ID of the source vertex. \\
+\hline
+{\em dest} & The ID of the destination vertex. \\
+\hline
+{\em max\+Walk\+Time} & The maximum allowed walking time (for eco mode). \\
+\hline
+{\em avoid\+\_\+n} & A vector to store nodes to avoid. \\
+\hline
+{\em avoid\+\_\+seg} & A vector to store segments to avoid. \\
+\hline
+{\em inc\+\_\+n} & The ID of a node to include in the route (if specified). \\
+\hline
+{\em num\+Vert} & The total number of vertices in the graph. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the input file was successfully parsed, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{parsing_8cpp_a7a6e73c79a858629c9540cc9cc46d991}\index{parsing.cpp@{parsing.cpp}!parseLocations@{parseLocations}}
+\index{parseLocations@{parseLocations}!parsing.cpp@{parsing.cpp}}
+\doxysubsubsection{\texorpdfstring{parseLocations()}{parseLocations()}}
+{\footnotesize\ttfamily \label{parsing_8cpp_a7a6e73c79a858629c9540cc9cc46d991} 
+bool parse\+Locations (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGraph}{Graph}}$<$ int $>$ \texorpdfstring{$\ast$}{*}}]{g}{, }\item[{const string \&}]{file}{}\end{DoxyParamCaption})}
+
+
+
+Parses the locations file to build the graph. 
+
+This function reads a CSV file containing location data (name, ID, code, and parking availability) and adds the corresponding vertices to the graph.
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & The graph to which vertices will be added. \\
+\hline
+{\em file} & The path to the locations file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the file was successfully parsed, false otherwise. 
+\end{DoxyReturn}

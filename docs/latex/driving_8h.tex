@@ -1,0 +1,63 @@
+\doxysection{src/headers/driving.h File Reference}
+\hypertarget{driving_8h}{}\label{driving_8h}\index{src/headers/driving.h@{src/headers/driving.h}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include "{}../data\+\_\+structures/\+Graph.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{driving_8h_ab3b4f4f13d9afed07619754d4711b1d9}{driving\+\_\+mode}} (\mbox{\hyperlink{classGraph}{Graph}}$<$ int $>$ \texorpdfstring{$\ast$}{*}g, const int \&origin, const int \&dest, bool batch=false)
+\begin{DoxyCompactList}\small\item\em Computes the best and alternative driving routes from an origin to a destination without any restrictions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{driving_8h_a76e7c0379404a3d835a3641e3f08b58a}{driving\+\_\+mode}} (\mbox{\hyperlink{classGraph}{Graph}}$<$ int $>$ \texorpdfstring{$\ast$}{*}g, const int \&origin, const int \&dest, const std\+::vector$<$ int $>$ \&avoid\+\_\+nodes, const std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \&avoid\+\_\+edges, const int \&include\+\_\+node=-\/1, bool batch=false)
+\begin{DoxyCompactList}\small\item\em Computes the best driving route from an origin to a destination while avoiding specific nodes and edges, and optionally including a specific node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{driving_8h_ab3b4f4f13d9afed07619754d4711b1d9}\index{driving.h@{driving.h}!driving\_mode@{driving\_mode}}
+\index{driving\_mode@{driving\_mode}!driving.h@{driving.h}}
+\doxysubsubsection{\texorpdfstring{driving\_mode()}{driving\_mode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{driving_8h_ab3b4f4f13d9afed07619754d4711b1d9} 
+void driving\+\_\+mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGraph}{Graph}}$<$ int $>$ \texorpdfstring{$\ast$}{*}}]{g}{, }\item[{const int \&}]{origin}{, }\item[{const int \&}]{dest}{, }\item[{const bool}]{batch}{}\end{DoxyParamCaption})}
+
+
+
+Computes the best and alternative driving routes from an origin to a destination without any restrictions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & The graph containing the vertices and edges. \\
+\hline
+{\em origin} & The ID of the origin vertex. \\
+\hline
+{\em dest} & The ID of the destination vertex. \\
+\hline
+{\em batch} & If true, outputs the results to a file; otherwise, outputs to the console. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{driving_8h_a76e7c0379404a3d835a3641e3f08b58a}\index{driving.h@{driving.h}!driving\_mode@{driving\_mode}}
+\index{driving\_mode@{driving\_mode}!driving.h@{driving.h}}
+\doxysubsubsection{\texorpdfstring{driving\_mode()}{driving\_mode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{driving_8h_a76e7c0379404a3d835a3641e3f08b58a} 
+void driving\+\_\+mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGraph}{Graph}}$<$ int $>$ \texorpdfstring{$\ast$}{*}}]{g}{, }\item[{const int \&}]{origin}{, }\item[{const int \&}]{dest}{, }\item[{const std\+::vector$<$ int $>$ \&}]{avoid\+\_\+nodes}{, }\item[{const std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \&}]{avoid\+\_\+edges}{, }\item[{const int \&}]{include\+\_\+node}{ = {\ttfamily -\/1}, }\item[{bool}]{batch}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+
+
+Computes the best driving route from an origin to a destination while avoiding specific nodes and edges, and optionally including a specific node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & The graph containing the vertices and edges. \\
+\hline
+{\em origin} & The ID of the origin vertex. \\
+\hline
+{\em dest} & The ID of the destination vertex. \\
+\hline
+{\em avoid\+\_\+nodes} & A vector of node IDs to avoid in the route. \\
+\hline
+{\em avoid\+\_\+edges} & A vector of pairs representing edges to avoid in the route. \\
+\hline
+{\em include\+\_\+node} & The ID of a node that must be included in the route, or -\/1 if no such node is required. \\
+\hline
+{\em batch} & If true, outputs the results to a file; otherwise, outputs to the console. \\
+\hline
+\end{DoxyParams}

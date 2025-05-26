@@ -1,0 +1,37 @@
+\doxysection{src/main\+\_\+files/main.cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{src/main\_files/main.cpp@{src/main\_files/main.cpp}}
+{\ttfamily \#include "{}../headers/modes.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_a638b85ceffac097c2aa79b76ba8c055e}{main}} (const int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em The main function of the program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_a638b85ceffac097c2aa79b76ba8c055e}\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8cpp_a638b85ceffac097c2aa79b76ba8c055e} 
+int main (\begin{DoxyParamCaption}\item[{const int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{argv}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+The main function of the program. 
+
+This function determines whether to run the program in batch mode or manual mode based on the number of command-\/line arguments.
+\begin{DoxyItemize}
+\item If command-\/line arguments are provided, it runs in batch mode using the provided arguments.
+\item If no arguments are provided, it runs in manual mode, prompting the user for input interactively.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & The number of command-\/line arguments. \\
+\hline
+{\em argv} & An array of command-\/line arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 0 upon successful execution. 
+\end{DoxyReturn}
